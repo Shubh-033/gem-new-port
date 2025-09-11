@@ -242,3 +242,27 @@ footer {
 .form-label {
     color: var(--text-color);
 }
+
+/* Social Icons */
+.social-icon {
+    font-size: 2rem; /* Increase icon size */
+    color: var(--text-color);
+    margin: 0 15px; /* Add space between icons */
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icon:hover {
+    color: var(--primary-color); /* Change color on hover */
+    transform: scale(1.2); /* Slightly enlarge on hover */
+}
+
+/* Navbar Social Icons */
+.nav-social {
+    font-size: 1.2rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-social:hover {
+    color: var(--primary-color);
+    transform: scale(1.1);
+}
