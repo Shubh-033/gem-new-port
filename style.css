@@ -50,7 +50,13 @@ html {
 
 /* Navigation Bar */
 .navbar {
-    background-color: var(--secondary-color) !important;
+    background-color: transparent !important;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.navbar.navbar-scrolled {
+    background-color: rgba(26, 26, 26, 0.8) !important; /* --secondary-color with alpha */
+    backdrop-filter: blur(10px);
 }
 
 .navbar-nav .nav-link {
@@ -82,14 +88,13 @@ header#home {
     overflow: hidden; /* Hide anything that goes outside the header */
 }
 
-header#home iframe {
+#particles-js {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 0; /* Behind the overlay and content */
-    border: none;
+    z-index: 0;
 }
 
 .header-overlay {
@@ -98,7 +103,7 @@ header#home iframe {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.2); /* Reduced overlay darkness for 3D scene */
+    background-color: rgba(0, 0, 0, 0.5); /* Adjusted for particle visibility */
     z-index: 1;
 }
 
@@ -212,13 +217,13 @@ footer {
 }
 
 /* Button Hover Effect */
-#about .btn, #home .btn {
+#about .btn, #home .btn, #contact .btn {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-#about .btn:hover, #home .btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+#about .btn:hover, #home .btn:hover, #contact .btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 0 20px rgba(13, 110, 253, 0.5);
 }
 
 #about .btn .bi {
@@ -265,4 +270,32 @@ footer {
 .nav-social:hover {
     color: var(--primary-color);
     transform: scale(1.1);
+}
+
+/* Scroll Down Indicator */
+.scroll-down-indicator {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2.5rem;
+    color: var(--text-color);
+    animation: bounce 2s infinite;
+    z-index: 2;
+}
+
+.scroll-down-indicator:hover {
+    color: var(--primary-color);
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateX(-50%) translateY(0);
+    }
+    40% {
+        transform: translateX(-50%) translateY(-20px);
+    }
+    60% {
+        transform: translateX(-50%) translateY(-10px);
+    }
 }

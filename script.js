@@ -25,8 +25,17 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    // Scrollspy logic
+    // Scrollspy and Navbar Scroll Effect
+    const navbar = document.querySelector('.navbar');
     window.addEventListener('scroll', function() {
+        // Navbar scroll effect
+        if (window.scrollY > 50) {
+            navbar.classList.add('navbar-scrolled');
+        } else {
+            navbar.classList.remove('navbar-scrolled');
+        }
+
+        // Scrollspy logic
         let current = '';
         sections.forEach(section => {
             const sectionTop = section.offsetTop;
