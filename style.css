@@ -1,0 +1,226 @@
+:root {
+    --primary-color: #0d6efd;
+    --secondary-color: #1A1A1A;
+    --background-color: #121212;
+    --text-color: #EAEAEA;
+    --card-background: #1E1E1E;
+    --border-color: #333;
+}
+
+/* General Styling */
+body {
+    padding-top: 56px;
+    font-family: 'Lato', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    cursor: none;
+}
+
+.cursor-dot {
+    width: 8px;
+    height: 8px;
+    background-color: var(--primary-color);
+}
+
+.cursor-outline {
+    width: 40px;
+    height: 40px;
+    border: 2px solid var(--primary-color);
+}
+
+.cursor-dot, .cursor-outline {
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 9999;
+    pointer-events: none;
+    transition: transform 0.1s ease-out;
+}
+
+h1, h2, h3, h4, h5, h6, .navbar-brand {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: var(--secondary-color) !important;
+}
+
+.navbar-nav .nav-link {
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--primary-color);
+    transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after,
+.navbar-nav .nav-link.active::after {
+    width: 100%;
+}
+
+/* Header/Home Section */
+header#home {
+    position: relative;
+    height: 100vh;
+    color: var(--text-color);
+    overflow: hidden; /* Hide anything that goes outside the header */
+}
+
+header#home iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0; /* Behind the overlay and content */
+    border: none;
+}
+
+.header-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2); /* Reduced overlay darkness for 3D scene */
+    z-index: 1;
+}
+
+#home .container {
+    position: relative;
+    z-index: 2;
+}
+
+header#home h1 {
+    color: var(--primary-color);
+}
+
+/* Sections */
+section {
+    padding: 80px 0;
+}
+
+section h2 {
+    color: var(--primary-color);
+}
+
+#about, #skills, #contact {
+    background-color: var(--background-color);
+}
+
+#projects {
+    background-color: var(--secondary-color);
+}
+
+/* Skills Section */
+#skills i {
+    transition: transform 0.3s ease;
+}
+
+#skills i:hover {
+    transform: scale(1.2);
+}
+
+/* Project Card Container */
+.project-card-container {
+    perspective: 1000px;
+}
+
+.project-card {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.8s;
+}
+
+.project-card-container:hover .project-card {
+    transform: rotateY(180deg);
+}
+
+.project-card-front,
+.project-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-color: var(--card-background);
+    border: 1px solid var(--border-color);
+    border-radius: .25rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card-front {
+    z-index: 2;
+}
+
+.project-card-back {
+    transform: rotateY(180deg);
+    z-index: 1;
+    justify-content: center;
+}
+
+.project-card-front .project-card-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 1rem;
+}
+
+.project-card-front img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-title {
+    color: var(--primary-color);
+}
+
+/* Typed.js Cursor */
+.typed-cursor {
+    color: var(--primary-color);
+    animation: typedjsBlink 0.7s infinite;
+}
+
+@keyframes typedjsBlink {
+    50% { opacity: 0.0; }
+}
+
+/* Footer */
+footer {
+    background-color: var(--secondary-color) !important;
+}
+
+/* Button Hover Effect */
+#about .btn, #home .btn {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#about .btn:hover, #home .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#about .btn .bi {
+    margin-right: 0.5rem;
+}

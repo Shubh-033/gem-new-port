@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/devicon@2.15.1/devicon.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Subham Singh Negi</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Home Section -->
+    <header id="home" class="d-flex align-items-center">
+      <iframe src='https://my.spline.design/meeet-cM6ac0tsFho1wKri4K7OOoq2/' frameborder='0' width='100%' height='100%'></iframe>
+      <div class="header-overlay"></div>
+      <div class="container text-center" data-aos="fade-in">
+        <h2 class="display-4">Hi, I'm</h2>
+        <h1 class="display-3"><span id="typed-name"></span></h1>
+        <p class="lead">
+          I craft engaging web experiences and turn ideas into functional web
+          apps.
+        </p>
+        <div class="mt-4">
+            <a href="#projects" class="btn btn-primary btn-lg">View My Work</a>
+            <a href="#contact" class="btn btn-outline-light btn-lg">Contact Me</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+      <div class="container" data-aos="fade-up">
+        <h2 class="text-center mb-5">About Me</h2>
+        <div class="row align-items-center">
+          <div class="col-md-4 text-center">
+            <img
+              src="assets/profile.jpg"
+              class="img-fluid rounded-circle mb-3"
+              alt="Your Name"
+            />
+          </div>
+          <div class="col-md-8">
+            <p class="lead">
+              Hi, I’m Subham Singh Negi, a passionate web developer dedicated to
+              creating interactive, efficient, and user-friendly web
+              applications. I enjoy transforming ideas into real-world
+              solutions, combining clean code, thoughtful design, and modern
+              technologies to craft web experiences that leave a lasting impact.
+              I have experience working with HTML, CSS, JavaScript, and modern
+              front-end frameworks, and I love exploring new tools and
+              techniques that enhance the way users interact with the web.
+              Whether it’s building responsive websites, dynamic web apps, or
+              seamless interfaces, my goal is to deliver projects that are not
+              only functional but also visually engaging. Beyond coding, I’m
+              constantly curious and driven to learn, experiment, and improve my
+              skills. I believe in writing clean, maintainable code and creating
+              solutions that are scalable and future-ready. My projects reflect
+              my attention to detail, creativity, and commitment to excellence.
+            </p>
+            <div class="mt-4">
+                <a href="assets/resume.pdf" class="btn btn-primary" target="_blank">View Resume</a>
+                <a href="assets/resume.pdf" class="btn btn-outline-primary" download="Subham-Singh-Negi-Resume.pdf"><i class="bi bi-download"></i> Download Resume</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5">
+      <div class="container" data-aos="fade-up">
+        <h2 class="text-center mb-5">Skills</h2>
+        <div class="row text-center">
+          <div class="col-md-2 col-4 mb-4">
+            <i
+              class="devicon-html5-plain-wordmark colored"
+              style="font-size: 4rem"
+            ></i>
+          </div>
+          <div class="col-md-2 col-4 mb-4">
+            <i
+              class="devicon-css3-plain-wordmark colored"
+              style="font-size: 4rem"
+            ></i>
+          </div>
+          <div class="col-md-2 col-4 mb-4">
+            <i
+              class="devicon-javascript-plain colored"
+              style="font-size: 4rem"
+            ></i>
+          </div>
+          <div class="col-md-2 col-4 mb-4">
+            <i
+              class="devicon-react-original-wordmark colored"
+              style="font-size: 4rem"
+            ></i>
+          </div>
+          <div class="col-md-2 col-4 mb-4">
+            <i
+              class="devicon-nodejs-plain-wordmark colored"
+              style="font-size: 4rem"
+            ></i>
+          </div>
+          <div class="col-md-2 col-4 mb-4">
+            <i
+              class="devicon-python-plain-wordmark colored"
+              style="font-size: 4rem"
+            ></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5">
+      <div class="container" data-aos="fade-up">
+        <h2 class="text-center mb-5">Projects</h2>
+        <div class="row">
+          <!-- Project Card 1 -->
+          <div class="col-md-4 mb-4 project-card-container">
+            <div class="project-card">
+              <div class="project-card-front">
+                <img
+                  src="https://via.placeholder.com/300x200"
+                  class="img-fluid"
+                  alt="Project 1"
+                />
+                <div class="project-card-title">
+                  <h5>Project One</h5>
+                </div>
+              </div>
+              <div class="project-card-back">
+                <div class="card-body">
+                  <h5 class="card-title">Project One</h5>
+                  <p class="card-text">
+                    A brief description of the first project. What it does, the
+                    technologies used, etc.
+                  </p>
+                  <a href="#" class="btn btn-primary">View Project</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Project Card 2 -->
+          <div class="col-md-4 mb-4 project-card-container">
+            <div class="project-card">
+              <div class="project-card-front">
+                <img
+                  src="https://via.placeholder.com/300x200"
+                  class="img-fluid"
+                  alt="Project 2"
+                />
+                <div class="project-card-title">
+                  <h5>Project Two</h5>
+                </div>
+              </div>
+              <div class="project-card-back">
+                <div class="card-body">
+                  <h5 class="card-title">Project Two</h5>
+                  <p class="card-text">
+                    A brief description of the second project. What it does, the
+                    technologies used, etc.
+                  </p>
+                  <a href="#" class="btn btn-primary">View Project</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Project Card 3 -->
+          <div class="col-md-4 mb-4 project-card-container">
+            <div class="project-card">
+              <div class="project-card-front">
+                <img
+                  src="https://via.placeholder.com/300x200"
+                  class="img-fluid"
+                  alt="Project 3"
+                />
+                <div class="project-card-title">
+                  <h5>Project Three</h5>
+                </div>
+              </div>
+              <div class="project-card-back">
+                <div class="card-body">
+                  <h5 class="card-title">Project Three</h5>
+                  <p class="card-text">
+                    A brief description of the third project. What it does, the
+                    technologies used, etc.
+                  </p>
+                  <a href="#" class="btn btn-primary">View Project</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+      <div class="container text-center" data-aos="fade-up">
+        <h2 class="mb-4">Contact Me</h2>
+        <p class="lead">
+          Feel free to reach out to me via email or social media.
+        </p>
+        <a href="mailto:subhamsinghnegi@gmai.com" class="btn btn-primary btn-lg"
+          >subhamsinghnegi03@gmail.com</a
+        >
+        <div class="mt-4">
+          <a href="#" class="btn btn-outline-light">LinkedIn</a>
+          <a href="#" class="btn btn-outline-light">GitHub</a>
+          <a href="#" class="btn btn-outline-light">Twitter</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-white text-center py-3">
+      <p>&copy; 2025 Your Name. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="script.js"></script>
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+  </body>
+</html>
