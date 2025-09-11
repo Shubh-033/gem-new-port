@@ -125,11 +125,19 @@ section h2 {
     color: var(--primary-color);
 }
 
-#about, #skills, #contact {
+#about {
     background-color: var(--background-color);
 }
 
+#skills {
+    background-color: var(--secondary-color);
+}
+
 #projects {
+    background-color: var(--background-color);
+}
+
+#contact {
     background-color: var(--secondary-color);
 }
 
