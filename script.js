@@ -79,4 +79,39 @@ document.addEventListener('DOMContentLoaded', function () {
             fill: "forwards"
         });
     });
+
+    // AJAX Contact Form Submission
+    const form = document.querySelector('#contact form');
+    const formStatus = document.querySelector('#form-status');
+
+    async function handleSubmit(event) {
+        event.preventDefault();
+        const data = new FormData(event.target);
+        fetch(event.target.action, {
+            method: form.method,
+            body: data,
+            headers: {
+                'Accept': 'application/json'
+            }
+        }).then(response => {
+            if (response.ok) {
+                formStatus.innerHTML = "Thank you for your message! I'll get back to you soon.";
+                formStatus.classList.add('text-success');
+                form.reset();
+            } else {
+                response.json().then(data => {
+                    if (Object.hasOwn(data, 'errors')) {
+                        formStatus.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+                    } else {
+                        formStatus.innerHTML = "Oops! There was a problem submitting your form";
+                        formStatus.classList.add('text-danger');
+                    }
+                })
+            }
+        }).catch(error => {
+            formStatus.innerHTML = "Oops! There was a problem submitting your form";
+            formStatus.classList.add('text-danger');
+        });
+    }
+    form.addEventListener("submit", handleSubmit)
 });
