@@ -246,6 +246,47 @@ section h2 {
     padding: 0.4em 0.6em;
 }
 
+.project-card .btn .bi {
+    margin-right: 0.5rem;
+}
+
+/* Experience Section */
+#experience {
+    background-color: var(--secondary-color);
+}
+
+#experience .experience-card {
+    background-color: var(--card-background);
+    border: 1px solid var(--border-color);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+#experience .experience-card .card-header {
+    background-color: var(--secondary-color);
+    border-bottom: 1px solid var(--border-color);
+    padding: 1rem 1.5rem;
+}
+
+#experience .experience-card h3 {
+    color: var(--primary-color);
+    font-size: 1.25rem;
+}
+
+#experience .experience-card .date {
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+#experience .experience-card .card-body {
+    padding: 1.5rem;
+}
+
+#experience .experience-card ul {
+    padding-left: 1.2rem;
+    margin-top: 1rem;
+}
+
 /* Typed.js Cursor */
 .typed-cursor {
     color: var(--primary-color);
