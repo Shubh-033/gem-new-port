@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="The portfolio of Subham Singh Negi, a passionate web developer and coder specializing in creating interactive and visually appealing websites.">
     <title>Subham's Portfolio</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -48,9 +49,9 @@
             <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
           </ul>
           <div class="navbar-nav d-none d-lg-flex">
-            <a href="https://www.linkedin.com/in/subhamsinghnegi1/" target="_blank" class="nav-link nav-social"><i class="bi bi-linkedin"></i></a>
-            <a href="https://github.com/Shubh-033" target="_blank" class="nav-link nav-social"><i class="bi bi-github"></i></a>
-            <a href="mailto:subhamsinghnegi03@gmail.com" class="nav-link nav-social"><i class="bi bi-envelope-fill"></i></a>
+            <a href="https://www.linkedin.com/in/subhamsinghnegi1/" target="_blank" class="nav-link nav-social" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="https://github.com/Shubh-033" target="_blank" class="nav-link nav-social" aria-label="GitHub"><i class="bi bi-github"></i></a>
+            <a href="mailto:subhamsinghnegi03@gmail.com" class="nav-link nav-social" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
           </div>
         </div>
       </div>
@@ -72,7 +73,7 @@
             <a href="#contact" class="btn btn-outline-light btn-lg">Contact Me</a>
         </div>
       </div>
-      <a href="#about" class="scroll-down-indicator">
+      <a href="#about" class="scroll-down-indicator" aria-label="Scroll to about section">
         <i class="bi bi-arrow-down-circle"></i>
       </a>
     </header>
@@ -80,13 +81,14 @@
     <!-- About Section -->
     <section id="about" class="py-5">
       <div class="container">
-        <h2 class="text-center mb-5" data-aos="fade-up">About Me</h2>
+        <h2 class="text-center" data-aos="fade-up">About Me</h2>
+        <p class="text-center lead mb-5" data-aos="fade-up">Get to know more about my journey and passion for technology</p>
         <div class="row align-items-center">
           <div class="col-md-4 text-center" data-aos="fade-right">
             <img
               src="assets/profile.jpg"
               class="img-fluid rounded-circle mb-3"
-              alt="Your Name"
+              alt="Subham Singh Negi profile picture"
             />
           </div>
           <div class="col-md-8" data-aos="fade-left">
@@ -107,7 +109,8 @@
     <!-- Skills Section -->
     <section id="skills" class="py-5">
       <div class="container" data-aos="fade-up">
-        <h2 class="text-center mb-5">Skills</h2>
+        <h2 class="text-center">Skills</h2>
+        <p class="text-center lead mb-5">Technologies and tools I work with to bring ideas to life</p>
 
         <!-- Frontend Development -->
         <h3 class="text-center mb-4">Frontend Development</h3>
@@ -124,7 +127,7 @@
             <i class="devicon-html5-plain colored" style="font-size: 4rem"></i>
             <p>HTML</p>
           </div>
-          <div class="col-md-2 col-4 mb-4 skill-item" data-tooltip="A style sheet language used for describing the presentation of a document.">
+          <div class="col-md-2 col-4 mb-4 skill-item" data-tooltip="A style sheet language for describing the presentation of a document.">
             <i class="devicon-css3-plain colored" style="font-size: 4rem"></i>
             <p>CSS</p>
           </div>
@@ -215,22 +218,27 @@
     <!-- Experience Section -->
     <section id="experience" class="py-5">
       <div class="container" data-aos="fade-up">
-        <h2 class="text-center mb-5">Experience</h2>
-        <div class="timeline">
-          <!-- Timeline Item -->
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <h3>Front End Web Development Intern</h3>
-              <h4>Edunet Foundation – AICTE Internship (IBM SkillsBuild) | Remote</h4>
-              <span class="date">Aug 2025 - Present</span>
-              <ul>
-                <li>Gained hands-on experience in building responsive user interfaces using HTML, CSS, and JavaScript.</li>
-                <li>Collaborated with mentors and participated in technical sessions and project-based learning.</li>
-              </ul>
+        <h2 class="text-center">Experience</h2>
+        <p class="text-center lead mb-5">Here’s a glimpse of the internships and roles where I’ve applied my skills and made an impact.</p>
+        <div class="row justify-content-center">
+          <!-- Experience Card 1 -->
+          <div class="col-md-10 mb-4">
+            <div class="experience-card">
+              <div class="card-header">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h3 class="mb-0">Front End Web Development Intern</h3>
+                  <span class="date">Aug 2025 - Present</span>
+                </div>
+                <h4 class="mb-0">Edunet Foundation – AICTE Internship (IBM SkillsBuild) | Remote</h4>
+              </div>
+              <div class="card-body">
+                <ul>
+                  <li>Gained hands-on experience in building responsive user interfaces using HTML, CSS, and JavaScript.</li>
+                  <li>Collaborated with mentors and participated in technical sessions and project-based learning.</li>
+                </ul>
+              </div>
             </div>
           </div>
-          <!-- Add more timeline items here -->
         </div>
       </div>
     </section>
@@ -238,7 +246,8 @@
     <!-- Projects Section -->
     <section id="projects" class="py-5">
       <div class="container" data-aos="fade-up">
-        <h2 class="text-center mb-5">Projects</h2>
+        <h2 class="text-center">Projects</h2>
+        <p class="text-center lead mb-5">A showcase of my recent work and creative solutions</p>
         <div class="row">
           <!-- Project Card 1 -->
           <div class="col-md-4 mb-4">
@@ -350,9 +359,29 @@
     <!-- Contact Section -->
     <section id="contact" class="py-5">
       <div class="container" data-aos="fade-up">
-        <h2 class="text-center mb-5">Contact Me</h2>
+        <h2 class="text-center">Contact Me</h2>
+        <p class="text-center lead mb-5">Let's discuss how we can work together on your next project</p>
         <div class="row">
-          <div class="col-md-8 mx-auto">
+          <div class="col-lg-5 mb-4 mb-lg-0">
+            <div class="contact-info p-4 rounded">
+              <h4 class="mb-4">Contact Information</h4>
+              <div class="d-flex align-items-center mb-3">
+                <i class="bi bi-envelope-fill me-3"></i>
+                <a href="mailto:subhamsinghnegi03@gmail.com">subhamsinghnegi03@gmail.com</a>
+              </div>
+              <div class="d-flex align-items-center mb-4">
+                <i class="bi bi-telephone-fill me-3"></i>
+                <a href="tel:+917075703257">+91-7075703257</a>
+              </div>
+              <p>Feel free to reach out through the form or by email. I'm always open to discussing new projects, creative ideas, or opportunities to be part of an amazing team.</p>
+              <div class="social-links mt-4">
+                <a href="https://www.linkedin.com/in/subhamsinghnegi1/" target="_blank" class="social-icon" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                <a href="https://github.com/Shubh-033" target="_blank" class="social-icon" aria-label="GitHub"><i class="bi bi-github"></i></a>
+                <a href="https://x.com/shubhamchills" target="_blank" class="social-icon" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7">
             <form id="contact-form" action="https://formspree.io/f/xvgbleyg" method="POST">
               <div class="mb-3">
                 <label for="name" class="form-label">Your Name</label>
@@ -369,12 +398,6 @@
               <button type="submit" class="btn btn-primary">Send Message</button>
             </form>
             <div id="form-status" class="mt-3"></div>
-            
-            <div class="social-links text-center mt-5">
-              <a href="https://www.linkedin.com/in/subhamsinghnegi1/" target="_blank" class="social-icon"><i class="bi bi-linkedin"></i></a>
-              <a href="https://github.com/Shubh-033" target="_blank" class="social-icon"><i class="bi bi-github"></i></a>
-              <a href="https://x.com/shubhamchills" target="_blank" class="social-icon"><i class="bi bi-twitter-x"></i></a>
-            </div>
           </div>
         </div>
       </div>

@@ -143,11 +143,11 @@ section h2 {
 }
 
 #projects {
-    background-color: var(--background-color);
+    background-color: var(--secondary-color);
 }
 
 #contact {
-    background-color: var(--secondary-color);
+    background-color: var(--background-color);
 }
 
 /* Skills Section */
@@ -260,6 +260,12 @@ section h2 {
     border: 1px solid var(--border-color);
     border-radius: 15px;
     overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#experience .experience-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2), 0 0 20px rgba(13, 110, 253, 0.4);
 }
 
 #experience .experience-card .card-header {
@@ -345,12 +351,15 @@ footer {
 .social-icon:hover {
     color: var(--primary-color); /* Change color on hover */
     transform: scale(1.2); /* Slightly enlarge on hover */
+    text-shadow: 0 0 15px rgba(13, 110, 253, 0.7);
 }
 
 /* Navbar Social Icons */
 .nav-social {
     font-size: 1.2rem;
     transition: color 0.3s ease, transform 0.3s ease;
+    padding: 0.5rem 1rem;
+    color: var(--text-color);
 }
 
 .nav-social:hover {

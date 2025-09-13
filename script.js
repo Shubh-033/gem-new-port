@@ -37,12 +37,24 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Scrollspy logic
         let current = '';
-        sections.forEach(section => {
-            const sectionTop = section.offsetTop;
-            if (pageYOffset >= sectionTop - 60) { // 60 is navbar height offset
-                current = section.getAttribute('id');
-            }
-        });
+        const scrollY = window.pageYOffset;
+        const viewportHeight = window.innerHeight;
+        const documentHeight = document.body.offsetHeight;
+
+        // Check if scrolled to the very bottom
+        if (scrollY + viewportHeight >= documentHeight - 5) { // -5 for a small buffer
+            current = sections[sections.length - 1].getAttribute('id'); // Force last section to be active
+        } else {
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.offsetHeight;
+                // Check if the top of the section is in view or past the top of the viewport
+                // and if the bottom of the section is still in view or below the viewport
+                if (scrollY >= sectionTop - 60 && scrollY < sectionTop + sectionHeight - 60) {
+                    current = section.getAttribute('id');
+                }
+            });
+        }
 
         removeActiveClasses();
         addActiveClass(current);
