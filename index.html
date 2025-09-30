@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="The portfolio of Subham Singh Negi, a passionate web developer and coder specializing in creating interactive and visually appealing websites.">
+    <title>Subham's Portfolio</title>
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/devicon@2.15.1/devicon.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Subham Singh Negi</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+            <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+          <div class="navbar-nav d-none d-lg-flex">
+            <a href="https://www.linkedin.com/in/subhamsinghnegi1/" target="_blank" class="nav-link nav-social" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="https://github.com/Shubh-033" target="_blank" class="nav-link nav-social" aria-label="GitHub"><i class="bi bi-github"></i></a>
+            <a href="mailto:subhamsinghnegi03@gmail.com" class="nav-link nav-social" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Home Section -->
+    <header id="home" class="d-flex align-items-center">
+      <div id="particles-js"></div>
+      <div class="header-overlay"></div>
+      <div class="container text-center" data-aos="fade-in">
+        <h2 class="intro-text">Hi, I'm</h2>
+        <h1 class="name-text"><span id="typed-name"></span></h1>
+        <p class="lead mt-4">
+          I craft engaging web experiences and turn ideas into functional web
+          apps.
+        </p>
+        <div class="cta-buttons mt-4">
+            <a href="#projects" class="btn btn-glass btn-lg">View My Work</a>
+            <a href="#contact" class="btn btn-glass-outline btn-lg">Contact Me</a>
+        </div>
+      </div>
+      <a href="#about" class="scroll-down-indicator" aria-label="Scroll to about section">
+        <i class="bi bi-arrow-down-circle"></i>
+      </a>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+      <div class="container">
+        <h2 class="text-center" data-aos="fade-up">About Me</h2>
+        <p class="text-center lead mb-5" data-aos="fade-up">Get to know more about my journey and passion for technology</p>
+        <div class="row align-items-center">
+          <div class="col-md-4 text-center" data-aos="fade-right">
+            <img
+              src="assets/profile.jpg"
+              class="img-fluid rounded-circle mb-3"
+              alt="Subham Singh Negi profile picture"
+            />
+          </div>
+          <div class="col-md-8" data-aos="fade-left">
+            <p class="lead">Hi! I’m Subham Singh Negi, a passionate web developer and coder who enjoys building interactive and visually appealing websites. I focus on creating projects that are both functional and creative, combining clean design with smooth user experience.</p>
+            <p class="lead">I am currently pursuing B.Tech in Computer Science at Anurag University, where I continue to develop my skills in web technologies and programming. I have also completed certifications in HTML, CSS, JavaScript, and Python, which have strengthened my foundation in web development.</p>
+            <p class="lead">I have worked on multiple personal projects and internships, building websites and web applications that challenge me to think creatively and solve problems effectively. Each project has helped me refine my skills and explore new technologies.</p>
+            <p class="lead">In addition to development, I enjoy experimenting with web design, creating animations, and exploring new frameworks and tools to enhance my workflow. I believe in continuous learning and staying updated with the latest trends in web technologies.</p>
+            <p class="lead">I am always excited to collaborate on innovative projects and bring new ideas to life. Feel free to explore my projects below or get in touch for collaborations and opportunities!</p>
+            <div class="mt-4">
+                <a href="assets/resume.pdf" class="btn btn-primary" target="_blank">View Resume</a>
+                <a href="assets/resume.pdf" class="btn btn-outline-primary" download="Subham-Singh-Negi-Resume.pdf"><i class="bi bi-download"></i> Download Resume</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5">
+      <div class="container" data-aos="fade-up">
+        <h2 class="text-center">Skills</h2>
+        <p class="text-center lead mb-5">Technologies and tools I work with to bring ideas to life</p>
+
+        <!-- Frontend Development -->
+        <h3 class="text-center mb-4">Frontend Development</h3>
+        <div class="row justify-content-center text-center">
+          <div class="col-md-2 col-4 mb-4 skill-item" data-tooltip="A JavaScript library for building user interfaces.">
+            <i class="devicon-react-original colored" style="font-size: 4rem"></i>
+            <p>React.js</p>
+          </div>
+          <div class="col-md-2 col-4 mb-4 skill-item" data-tooltip="A utility-first CSS framework for rapid UI development.">
+            <i class="devicon-tailwindcss-plain colored" style="font-size: 4rem"></i>
+            <p>Tailwind CSS</p>
+          </div>
+          <div class="col-md-2 col-4 mb-4 skill-item" data-tooltip="The standard markup language for creating web pages.">
+            <i class="devicon-html5-plain colored" style="font-size: 4rem"></i>
+            <p>HTML</p>
+          </div>
+          <div class="col-md-2 col-4 mb-4 skill-item" data-tooltip="A style sheet language for describing the presentation of a document.">
+            <i class="devicon-css3-plain colored" style="font-size: 4rem"></i>
+            <p>CSS</p>
+          </div>
+        </div>
+
+        <!-- Backend Development -->
+        <h3 class="text-center my-4">Backend Development</h3>
+        <div class="row justify-content-center text-center">
+          <div class="col-md-2 col-4 mb-4 skill-item" data-tooltip="A JavaScript runtime built on Chrome's V8 JavaScript engine.">
+            <i class="devicon-nodejs-plain colored" style="font-size: 4rem"></i>
+            <p>Node.js</p>
+          </div>
+          <div class="col-md-2 col-4 mb-4 skill-item" data-tooltip="A minimal and flexible Node.js web application framework.">
+            <i class="devicon-express-original colored" style="font-size: 4rem"></i>
+            <p>Express.js</p>
+          </div>
+          <div class="col-md-2 col-4 mb-4 skill-item" data-tooltip="A high-level, general-purpose programming language.">
+            <i class="devicon-python-plain colored" style="font-size: 4rem"></i>
+            <p>Python</p>
+          </div>
+        </div>
+
+        <!-- Programming Languages -->
+        <h3 class="text-center my-4">Programming Languages</h3>
+        <div class="row justify-content-center text-center">
+          <div class="col-md-2 col-4 mb-4 skill-item" data-tooltip="A high-level, general-purpose programming language.">
+            <i class="devicon-python-plain colored" style="font-size: 4rem"></i>
+            <p>Python</p>
+          </div>
+          <div class="col-md-2 col-4 mb-4 skill-item" data-tooltip="A programming language that conforms to the ECMAScript specification.">
+            <i class="devicon-javascript-plain colored" style="font-size: 4rem"></i>
+            <p>JavaScript</p>
+          </div>
+          <div class="col-md-2 col-4 mb-4 skill-item" data-tooltip="A class-based, object-oriented programming language.">
+            <i class="devicon-java-plain colored" style="font-size: 4rem"></i>
+            <p>Java</p>
+          </div>
+          <div class="col-md-2 col-4 mb-4 skill-item" data-tooltip="A general-purpose programming language created by Bjarne Stroustrup.">
+            <i class="devicon-cplusplus-plain colored" style="font-size: 4rem"></i>
+            <p>C++</p>
+          </div>
+          <div class="col-md-2 col-4 mb-4 skill-item" data-tooltip="A standard language for storing, manipulating and retrieving data in databases.">
+            <i class="devicon-postgresql-plain colored" style="font-size: 4rem"></i>
+            <p>SQL</p>
+          </div>
+        </div>
+
+        <!-- Databases -->
+        <h3 class="text-center my-4">Databases</h3>
+        <div class="row justify-content-center text-center">
+          <div class="col-md-2 col-4 mb-4 skill-item" data-tooltip="A source-available cross-platform document-oriented database program.">
+            <i class="devicon-mongodb-plain colored" style="font-size: 4rem"></i>
+            <p>MongoDB</p>
+          </div>
+          <div class="col-md-2 col-4 mb-4 skill-item" data-tooltip="An open-source relational database management system.">
+            <i class="devicon-mysql-plain colored" style="font-size: 4rem"></i>
+            <p>MySQL</p>
+          </div>
+          <div class="col-md-2 col-4 mb-4 skill-item" data-tooltip="A platform developed by Google for creating mobile and web applications.">
+            <i class="devicon-firebase-plain colored" style="font-size: 4rem"></i>
+            <p>Firebase</p>
+          </div>
+          <div class="col-md-2 col-4 mb-4 skill-item" data-tooltip="An open source Firebase alternative.">
+            <i class="bi bi-database" style="font-size: 4rem"></i>
+            <p>Supabase</p>
+          </div>
+        </div>
+
+        <!-- Tools -->
+        <h3 class="text-center my-4">Tools</h3>
+        <div class="row justify-content-center text-center">
+          <div class="col-md-2 col-4 mb-4 skill-item" data-tooltip="A distributed version control system.">
+            <i class="devicon-git-plain colored" style="font-size: 4rem"></i>
+            <p>Git</p>
+          </div>
+          <div class="col-md-2 col-4 mb-4 skill-item" data-tooltip="A provider of Internet hosting for software development and version control using Git.">
+            <i class="devicon-github-original" style="font-size: 4rem"></i>
+            <p>GitHub</p>
+          </div>
+          <div class="col-md-2 col-4 mb-4 skill-item" data-tooltip="A source-code editor made by Microsoft for Windows, Linux and macOS.">
+            <i class="devicon-vscode-plain colored" style="font-size: 4rem"></i>
+            <p>VS Code</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-5">
+      <div class="container" data-aos="fade-up">
+        <h2 class="text-center">Experience</h2>
+        <p class="text-center lead mb-5">Here’s a glimpse of the internships and roles where I’ve applied my skills and made an impact.</p>
+        <div class="row justify-content-center">
+          <!-- Experience Card 1 -->
+          <div class="col-md-10 mb-4">
+            <div class="experience-card">
+              <div class="card-header">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h3 class="mb-0">Front End Web Development Intern</h3>
+                  <span class="date">Aug 2025 - Present</span>
+                </div>
+                <h4 class="mb-0">Edunet Foundation – AICTE Internship (IBM SkillsBuild) | Remote</h4>
+              </div>
+              <div class="card-body">
+                <ul>
+                  <li>Gained hands-on experience in building responsive user interfaces using HTML, CSS, and JavaScript.</li>
+                  <li>Collaborated with mentors and participated in technical sessions and project-based learning.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5">
+      <div class="container" data-aos="fade-up">
+        <h2 class="text-center">Projects</h2>
+        <p class="text-center lead mb-5">A showcase of my recent work and creative solutions</p>
+        <div class="row">
+          <!-- Project Card 1 -->
+          <div class="col-md-4 mb-4">
+            <div class="project-card h-100" data-category="web">
+              <img src="assets/resolioimg.png" class="card-img-top" alt="RESOLIO AI">
+              <div class="card-body">
+                <h5 class="card-title">RESOLIO AI</h5>
+                <p class="card-text">Resolio is a web application that allows users to create professional resumes and portfolio websites easily.</p>
+                <div class="tech-stack mt-3">
+                  <span class="badge">HTML</span>
+                  <span class="badge">CSS</span>
+                  <span class="badge">JavaScript</span>
+                  <span class="badge">jsPDF</span>
+                </div>
+                <div class="mt-3">
+                  <a href="https://resolio-ai.netlify.app/" class="btn btn-primary" target="_blank" rel="noopener noreferrer"><i class="bi bi-box-arrow-up-right"></i> Live Preview</a>
+                  <a href="https://github.com/Shubh-033/RESOLIO" class="btn btn-outline-primary" target="_blank" rel="noopener noreferrer">Source Code</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Project Card 2 -->
+          <div class="col-md-4 mb-4">
+            <div class="project-card h-100" data-category="ai">
+              <img src="assets/reelwriteimg.png" class="card-img-top" alt="REELWRITE AI">
+              <div class="card-body">
+                <h5 class="card-title">REELWRITE AI</h5>
+                <p class="card-text">ReelWrite is a web application that helps users generate engaging social media content scripts using AI.</p>
+                <div class="tech-stack mt-3">
+                  <span class="badge">React</span>
+                  <span class="badge">Node.js</span>
+                  <span class="badge">Firebase</span>
+                  <span class="badge">GROQ API</span>
+                  <span class="badge">JavaScript</span>
+                </div>
+                <div class="mt-3">
+                  <a href="https://reelwrite-ai.netlify.app/" class="btn btn-primary" target="_blank" rel="noopener noreferrer"><i class="bi bi-box-arrow-up-right"></i> Live Preview</a>
+                  <a href="https://github.com/Shubh-033/ReelWriteAI" class="btn btn-outline-primary" target="_blank" rel="noopener noreferrer">Source Code</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Project Card 3 -->
+          <div class="col-md-4 mb-4">
+            <div class="project-card h-100" data-category="web">
+              <img src="assets/mememorphimg.png" class="card-img-top" alt="MEMEMORPH">
+              <div class="card-body">
+                <h5 class="card-title">MEMEMORPH</h5>
+                <p class="card-text">Mememorph is a web application that lets users create, customize, and share memes effortlessly.</p>
+                <div class="tech-stack mt-3">
+                  <span class="badge">React</span>
+                  <span class="badge">Tailwind CSS</span>
+                  <span class="badge">Node.js</span>
+                </div>
+                <div class="mt-3">
+                  <a href="https://meme-morph.vercel.app/" class="btn btn-primary" target="_blank" rel="noopener noreferrer"><i class="bi bi-box-arrow-up-right"></i> Live Preview</a>
+                  <a href="https://github.com/Shubh-033/MemeMorph" class="btn btn-outline-primary" target="_blank" rel="noopener noreferrer">Source Code</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <!-- Project Card 4 -->
+          <div class="col-md-4 mb-4">
+            <div class="project-card h-100">
+              <img src="assets/thriftloopimg.png" class="card-img-top" alt="THRIFTLOOP">
+              <div class="card-body">
+                <h5 class="card-title">THRIFTLOOP</h5>
+                <p class="card-text">Thrift Loop is a modern web app that lets users buy and sell Thrifted clothing.</p>
+                <div class="tech-stack mt-3">
+                  <span class="badge">React</span>
+                  <span class="badge">Tailwind CSS</span>
+                  <span class="badge">Node.js</span>
+                  <span class="badge">Express</span>
+                  <span class="badge">MongoDB</span>
+                  <span class="badge">JWT</span>
+                </div>
+                <div class="mt-3">
+                  <a href="https://github.com/Shubh-033/ThriftLoop" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Source Code</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Project Card 5 -->
+          <div class="col-md-4 mb-4">
+            <div class="project-card h-100">
+              <img src="assets/quantaimg.png" class="card-img-top" alt="QUANTA AI">
+              <div class="card-body">
+                <h5 class="card-title">QUANTA AI</h5>
+                <p class="card-text">QuantaAI is an AI-powered web application that enables real-time conversational interactions.</p>
+                <div class="tech-stack mt-3">
+                  <span class="badge">HTML</span>
+                  <span class="badge">CSS</span>
+                  <span class="badge">JavaScript</span>
+                  <span class="badge">Node.js</span>
+                  <span class="badge">Groq API</span>
+                </div>
+                <div class="mt-3">
+                  <a href="https://github.com/Shubh-033/QuantaAI" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Source Code</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+      <div class="container" data-aos="fade-up">
+        <h2 class="text-center">Contact Me</h2>
+        <p class="text-center lead mb-5">Let's discuss how we can work together on your next project</p>
+        <div class="row">
+          <div class="col-lg-5 mb-4 mb-lg-0">
+            <div class="contact-info p-4 rounded">
+              <h4 class="mb-4">Contact Information</h4>
+              <div class="d-flex align-items-center mb-3">
+                <i class="bi bi-envelope-fill me-3"></i>
+                <a href="mailto:subhamsinghnegi03@gmail.com">subhamsinghnegi03@gmail.com</a>
+              </div>
+              <div class="d-flex align-items-center mb-4">
+                <i class="bi bi-telephone-fill me-3"></i>
+                <a href="tel:+917075703257">+91-7075703257</a>
+              </div>
+              <p>Feel free to reach out through the form or by email. I'm always open to discussing new projects, creative ideas, or opportunities to be part of an amazing team.</p>
+              <div class="social-links mt-4">
+                <a href="https://www.linkedin.com/in/subhamsinghnegi1/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                <a href="https://github.com/Shubh-033" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub"><i class="bi bi-github"></i></a>
+                <a href="https://x.com/shubhamchills" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <form id="contact-form" action="https://formspree.io/f/xvgbleyg" method="POST">
+              <div class="mb-3">
+                <label for="name" class="form-label">Your Name</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Your Email</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+            <div id="form-status" class="mt-3"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-white text-center py-3">
+      <p>&copy; 2025 Subham Singh Negi. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.9.3/tsparticles.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script src="particles-config.js"></script>
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+    <button id="back-to-top" class="btn btn-primary" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
+  </body>
+</html>
